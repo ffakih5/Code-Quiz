@@ -8,32 +8,39 @@
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="index.css">
     <title>Code Quiz</title>
-<html>
-    <body>
+   </head>
+   <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container navbar comntainer mx-0">
-        <div class="row w-100">
-            <div class = 
-
-
-        </div>
-
-        </div>
-       
+            <div class="container navbar comntainer mx-0">
+                <div class="row w-100">
+                     <div class ="col-d col-md-2">
+                        <button type="button" id="HS-button" class="btn btn-info">Display High Scores</button>
+                </div>
+                <div class ="col-3 col-md-7"></div>
+                <div class ="col-5 col-md-3"></div>
+                    <form> 
+                        <div class="form-group row">
+                            <label for="remaining-time" class="col-sm-7 col-form-label">Time</label>
+                            <div class="col-sm-5">
+                                <input type="number" readonly class="form-control" id="remaining-time" placeholder="0">
+                            </div>
+                        </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
         </nav>
+
         <h1> Code Quiz</h1>
         <button id=start>Start Quiz</button>
         <div id=quiz></div> 
         <p id="timer"> Timer</p>
 
-
-
-    </body>
 <script src= "index.js"> </script>
 
 
 
 
 
-
+</body>
 </html>
