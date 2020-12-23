@@ -1,4 +1,6 @@
-
+function launchQuiz(){
+        let remainingTime=0;
+}
     console.log("Quiz");
     var quizQuestions = [
        {
@@ -46,3 +48,4 @@
     
 
     console.log(quizQuestions);
+    
