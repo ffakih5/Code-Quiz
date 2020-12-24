@@ -1,16 +1,16 @@
     var quizQuestions = document.querySelector("#quiz-questions");
     var remainingTime = document.querySelector("#time");
     var quizAnswers = document.querySelector("#answers");
-    var quizStart = document.querySelector("#quiz-start");
-    var endScore = document.querySelector("#end-score");
-    var inputInitials = document.querySelector("#initials")
-    var submitButton = document.querySelector("#submit");
+    var submitBtn = document.querySelector("#submit");
+    var startBtn = document.querySelector("#quiz-start");
+    var inputInitials = document.querySelector("#initials");
+  
    
     var questionCount = 0
     var time = questions.length * 20;
     var timeR; 
 
-    function launchQuiz(){
+    function launchQuiz() {
     var remainingTime=0;
 }
     
