@@ -99,10 +99,33 @@ function keepHighscore() {
 
     if (initials !=="") {
         var highScores = 
-        JSON.parse(window.localStorage.getItem("High Scores")) || [];
+        JSON.parse(window.localStorage.getItem("high-scores")) || [];
         
-    };
+        var newScore = {
+            score: time,
+            initials: initials
+        };
+
+        high-highScores.push(newScore); 
+        window.localStorage.setItem("high-scores", JSON.stringify(high-scores));
+
+        window.location.href = "scores.html";
+        }
     }
+function enterPressed(event) {
+    if (event.key === "Enter") {
+        keepHighscore();
+    }
+}
+submitBtn.onclick = keepHighscore;
+
+startBtn.onclick = startQuiz;
+
+inputInitials.onkeyup = enterPressed;
+
+
+    
+
 
 
 
