@@ -12,11 +12,31 @@
    <body>
         <div class="scores"> <a href=scores.html>See Highscores</a>
         
-        <div class="timer"> Time: <span id="time">0</span>
+        <div class="timer"> Time: <span id="time">0</span></div>
+
+        <div class="wrapper">
+            <div id="quiz-start" class="start">
+                <h1>Coding Quiz</h1>
+                <p>Attempt to answer all code-based questions correctly in the allocated time.
+                NOTE: When a question is answered incorrectly, a 10 second penalty is awarded!
+                </p>
+                <button id="begin">Begin Quiz</button>
+            </div>
         </div>
-  <p>Attempt to answer all code-based questions correctly in the allocated time.
- NOTE: When a question is answered incorrectly, a 10 second penalty is awarded! </p>
-      
+
+        <div id="quiz questions" class="hide">
+            <h2 id="Question"></h2>
+            <div id="answers" class="answers"></div>
+        </div>
+
+        <div id="quiz-end" class="hide">
+            <h2>Complete!</h2>
+            <p>WOWZA You scored <span id="end-score"></span>!</p>
+            <p>Input Inititals: <input type="text" id="initials">
+                <button id="submit">Submit</button>
+            </p>
+        </div>
+       
  <script src="index.js"> </script>
  <script src="QuestionSet.js"></script>
 
