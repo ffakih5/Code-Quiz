@@ -3,9 +3,9 @@ console.log("Quiz");
        {
         "question" : "What does HTML stand for?" ,
         "answers"  : [
-           "HumanT", 
+           "HumananitT", 
            "bla bla",
-           "easyto understand",
+           "",
            "HyperTextMarkupLanguage"
         ],
          "rightanswer" : 3
@@ -14,12 +14,43 @@ console.log("Quiz");
        {
         "question" : "What does CSS stand for?" ,
         "answers"  : [
-           "HumanT", 
+           "", 
            "Cascading Style Sheets",
            "easyto understand",
            "HyperTextMarkupLanguage"
         ],
          "rightanswer" : 1
+       },
+
+       {
+        "question" : "Which of these is a programming language?" , 
+        "answers"  : [
+            "JavaScript", 
+            "Pythagoras Theorum",
+            "Ruby Code",
+            "CSS",
+        ],
+         "rightanswer" : 0
+       },
+       { 
+        "question" : "Where do you find the Document title, meta data, styles and links?" , 
+        "answers"  : [
+            "<html>",
+            "<a>",
+            "<script>",
+            "<head>",
+        ],
+         "rightanswer" : 3
+       },
+       {
+        "question" : "What is used to enable a button when clicked?", 
+        "answers"  : [
+            "addElementById",
+            "onClick",
+            "addEventListener",
+            "function()",
+        ],
+        "rightanswer" : 2
        }
     ]
     function showQuestion (idx) {
@@ -32,6 +63,4 @@ console.log("Quiz");
             <li> ${ quizQuestions[i].answers[3]}</li>
             </ul> 
         
-        
-        
-    }
+    },
