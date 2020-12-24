@@ -3,14 +3,15 @@
     var quizAnswers = document.querySelector("#answers");
     var quizStart = document.querySelector("#quiz-start");
     var endScore = document.querySelector("#end-score");
+    var inputInitials = document.querySelector("#initials")
+    var submitButton = document.querySelector("#submit");
    
-    var submitButton= document.querySelector("#submit-initials");
-   
-   
-    var questionCount= questions.length;var highScores = [];
+    var questionCount = 0
+    var time = questions.length * 20;
+    var timeR; 
 
     function launchQuiz(){
-        var remainingTime=0;
+    var remainingTime=0;
 }
     
     function start(){
