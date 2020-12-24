@@ -16,16 +16,16 @@
     
 function startQuiz(){
 
-        var quizStart= document.getElementById("quiz-start");
-        quizStart.setAttribute("class", "hide");
+    var quizStart= document.getElementById("quiz-start");
+    quizStart.setAttribute("class", "hide");
 
-        quizQuestions.removeAttribute("class");
+    quizQuestions.removeAttribute("class");
 
-        timeR = setInterval(clockTick, 1000);
+    timeR = setInterval(clockTick, 1000);
 
-        timeR.textContent = time;
+    timeR.textContent = time;
 
-        getQuestion();
+    getQuestion();
     
     }
 
@@ -53,26 +53,25 @@ function getQuestion() {
         
 function questionClick() {
 
-    if (this.value !== quiz-questions[questionCount].answer) {
+if (this.value !== quiz-questions[questionCount].answer) {
             
-    time -= 10;
+time -= 10;
 
-    if (time<0) {
-                time = 0;
-            }
+if (time<0) {
+    time = 0;
+}
 
-    timeR.textContent = time;
-            } 
-    }
+timeR.textContent = time; 
+}
 
-    questionCount++;
+questionCount++;
 
-        if(questionCount===questions.length) {
-            quizEnd();
-        } else {
-            getQuestion();
-        }
-    }
+if(questionCount===questions.length) {
+    quizEnd();
+} else {
+   getQuestion();
+ }
+}
 function quizEnd() {
         clearInterval(timeR);
         
@@ -102,7 +101,7 @@ function keepHighscore() {
         var highScores = 
         JSON.parse(window.localStorage.getItem("High Scores")) || [];
         
-    }
+    };
     }
 
 
