@@ -28,6 +28,72 @@
         getQuestion();
     
     }
+
+    function getQuestion() {
+        var currentQuestion  = quiz-questions[questionCount];
+
+        var questionS = document.getElementById("Question");
+        questionS.textContent = currentQuestion.question;
+
+        answers.innerHTML = "";
+
+        currentQuestion.answers.forEach(function(answer, i) {
+            var answerNode = document.createElement("button");
+            setAttribute("class", "answer");
+            setAttribute("value", answer);
+
+            answerNode.textContent = i + 1 + ". " + answer;
+
+            answerNode.onclick = questionClick;
+
+            answers.appendChild(answerNode);
+
+        });
+        
+        function questionClick() {
+
+            if (this.value !== quiz-questions[questionCount].answer) {
+            
+            time -= 10;
+
+            if (time<0) {
+                time = 0;
+            }
+
+            timeR.textContent = time;
+            } 
+        }
+
+        questionCount++;
+
+        if(questionCount===questions.length) {
+            quizEnd();
+        } else {
+            getQuestion();
+        }
+    }
+    function quizEnd() {
+        clearInterval(timeR);
+        
+        var quizEnd = documemt.getElementById("quiz-end");
+        quizEnd.removeAttribute("class");
+
+        var endScore = document.getElementById("end-score");
+        endScore.textContent = time;
+
+        quizQuestions.setAttribute("class", "hide");
+    }
+
+
+
+
+
+
+
+
+
+
+    }
    // var startQuiz = document.querySelector("#start-button");
    // startQuiz.addEventListener("click", start-button) 
     
@@ -37,12 +103,12 @@
 
     //function showQuestion (idx) {
         //return `
-            <h1> ${ quizQuestions[i].question}</h1>
-            <ul>
-            <li> ${ quizQuestions[i].answers[0]}</li>
-            <li> ${ quizQuestions[i].answers[1]}</li>
-            <li> ${ quizQuestions[i].answers[2]}</li>
-            <li> ${ quizQuestions[i].answers[3]}</li>
-            </ul> 
-        `
+            //<h1> ${ quizQuestions[i].question}</h1>
+            //<ul>
+            //<li> ${ quizQuestions[i].answers[0]}</li>
+           // <li> ${ quizQuestions[i].answers[1]}</li>
+            //<li> ${ quizQuestions[i].answers[2]}</li>
+           // <li> ${ quizQuestions[i].answers[3]}</li>
+            //</ul> 
+        //`
     //}
