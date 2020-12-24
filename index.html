@@ -10,83 +10,15 @@
     <title>Code Quiz</title>
    </head>
    <body>
-        <div class="scores">  
-                </div><button type="button" id="HS-button" class="btn btn-info">Display High Scores</button>
-                </div>
-                <div class ="col-3 col-md-7"></div>
-                <div class ="col-5 col-md-3"></div>
-                    <form> 
-                        <div class="form-group row">
-                            <label for="remaining-time" class="col-sm-7 col-form-label">Time</label>
-                            <div class="col-sm-5">
-                                <input type="number" readonly class="form-control" id="remaining-time" placeholder="0">
-                            </div>
-                        </div>
-                    </form>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div id="container-landing" class="container">
-            <div class="row mb-3">
-                <div class="col-12 text-center">
-                    <h1> Code Quiz</h1> 
-                </div>
-            </div>
-            <div class="row mb-3">
-                <div class="col-12 text-center">
-                    <p>Attempt to answer all code-based questions correctly in the allocated time.
-                     NOTE: When a question is answered incorrectly, a 10 second penalty is awarded! </p>
-                </div>
-            </div>
-            <div class= "row">
-                <div class="col-12 text-center">
-                    <button id="start-button" type="button" button="btn btn-secondary btn-lg">Start Quiz</button>
-                </div>
-            </div>
-        </div>
-
-            <div id="container-quiz" class="container d-none">
-
-            </div>
-            <div id="container-final" class="container d-none">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <form>
-                            <div class="form-group row">
-                                <label for="final-score" class="col-sm-7 col-form-label">Final Score</label>
-                                <div class="col-sm-5">
-                                    <input type="number" readonly class="form-control" id="final-score" placeholder="0">
-                                </div>
-                            </div>
-                            </form>
-                            <form>
-                                <div class="form-group">
-                                    <label for="initials-input">Initials</label>
-                                    <input type="text" class="form-control" id="initials-entry" placeholder="Enter Initials Here">
-                                </div>
-                                <button id="submit-initials" type="button" class="btn btn-success">Submit</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <div id="container-highscore" class="container d-none">
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div id="highscore-table" class="col-8">
-                        <div class="row">
-                            <div class="col-12 text-center">
-                                <h2>High Scores</h2>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-2"></div>
-                </div>
-            </div>
+        <div class="scores"> <a href=scores.html>See Highscores</a>
         
-
-            <script src="index.js"> </script>
-            <script src="QuestionSet.js"></script>
+        <div class="timer"> Time: <span id="time">0</span>
+        </div>
+  <p>Attempt to answer all code-based questions correctly in the allocated time.
+ NOTE: When a question is answered incorrectly, a 10 second penalty is awarded! </p>
+      
+ <script src="index.js"> </script>
+ <script src="QuestionSet.js"></script>
 
 </body>
 </html>
