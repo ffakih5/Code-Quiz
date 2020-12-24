@@ -1,11 +1,13 @@
-
-    var startButton= document.querySelector("#start-button");
-    var remainingTime= document.querySelector("#time");
-    var finalScore= document.querySelector("#final-score");
-    var questionCount= questions.length;
+    var quizQuestions = document.querySelector("#quiz-questions");
+    var remainingTime = document.querySelector("#time");
+    var quizAnswers = document.querySelector("#answers");
+    var quizStart = document.querySelector("#quiz-start");
+    var endScore = document.querySelector("#end-score");
+   
     var submitButton= document.querySelector("#submit-initials");
-    var hsButton= document.querySelector("#HS-button");
-    var highScores = [];
+   
+   
+    var questionCount= questions.length;var highScores = [];
 
     function launchQuiz(){
         var remainingTime=0;
