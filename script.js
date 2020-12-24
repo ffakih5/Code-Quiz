@@ -14,7 +14,7 @@
    // var remainingTime=0;
 //}
     
-    function startQuiz(){
+function startQuiz(){
 
         var quizStart= document.getElementById("quiz-start");
         quizStart.setAttribute("class", "hide");
@@ -29,42 +29,43 @@
     
     }
 
-    function getQuestion() {
-        var currentQuestion  = quiz-questions[questionCount];
+function getQuestion() {
+    var currentQuestion  = quiz-questions[questionCount];
 
-        var questionS = document.getElementById("Question");
-        questionS.textContent = currentQuestion.question;
+    var questionS = document.getElementById("Question");
+    questionS.textContent = currentQuestion.question;
 
-        answers.innerHTML = "";
+    answers.innerHTML = "";
 
-        currentQuestion.answers.forEach(function(answer, i) {
-            var answerNode = document.createElement("button");
-            setAttribute("class", "answer");
-            setAttribute("value", answer);
+    currentQuestion.answers.forEach(function(answer, i) {
+        var answerNode = document.createElement("button");
+        answerNode.setAttribute("class", "answer");
+        answerNode.setAttribute("value", answer);
 
-            answerNode.textContent = i + 1 + ". " + answer;
+        answerNode.textContent = i + 1 + ". " + answer;
 
-            answerNode.onclick = questionClick;
+        answerNode.onclick = questionClick;
 
-            answers.appendChild(answerNode);
+        answers.appendChild(answerNode);
 
-        });
+    });
+}
         
-        function questionClick() {
+function questionClick() {
 
-            if (this.value !== quiz-questions[questionCount].answer) {
+    if (this.value !== quiz-questions[questionCount].answer) {
             
-            time -= 10;
+    time -= 10;
 
-            if (time<0) {
+    if (time<0) {
                 time = 0;
             }
 
-            timeR.textContent = time;
+    timeR.textContent = time;
             } 
-        }
+    }
 
-        questionCount++;
+    questionCount++;
 
         if(questionCount===questions.length) {
             quizEnd();
@@ -72,7 +73,7 @@
             getQuestion();
         }
     }
-    function quizEnd() {
+function quizEnd() {
         clearInterval(timeR);
         
         var quizEnd = documemt.getElementById("quiz-end");
@@ -84,16 +85,36 @@
         quizQuestions.setAttribute("class", "hide");
     }
 
+function timerGo() {
+        time--;
+        timeR.textContent = time;
 
-
-
-
-
-
-
-
-
+        if (time <= 0) {
+            quizEnd();
+        }
     }
+
+function keepHighscore() {
+
+    var initials = inputInitials.value.trim();
+
+    if (initials !=="") {
+        var highScores = 
+        JSON.parse(window.localStorage.getItem("High Scores")) || [];
+        
+    }
+    }
+
+
+
+
+
+
+
+
+
+
+    
    // var startQuiz = document.querySelector("#start-button");
    // startQuiz.addEventListener("click", start-button) 
     
