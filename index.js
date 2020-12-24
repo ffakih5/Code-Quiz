@@ -1,8 +1,6 @@
 function launchQuiz(){
         var remainingTime=0;
 }
-
-
     var startButton= document.querySelector("#start-button");
     var remainingTime= document.querySelector("#remaining-time");
     var finalScore= document.querySelector("#final-score");
@@ -21,8 +19,8 @@ function launchQuiz(){
         questionDiv.innerHTML = showQuestion(0)
     
     }
-    var startQuiz = document.getElementById('start');
-    startQuiz.addEventListener('click', start) 
+    var startQuiz = document.querySelector("#start-button");
+    startQuiz.addEventListener("click", start-button) 
     
 
     console.log(quizQuestions);

@@ -3,14 +3,13 @@ console.log("Quiz");
        {
         "question" : "What does HTML stand for?" ,
         "answers"  : [
-           "HumananitT", 
-           "bla bla",
-           "",
-           "HyperTextMarkupLanguage"
+           "HumananiTy MagnosteeL", 
+           "Hyper Tastic Magic Lions",
+           "Horton Tells Murtle Loo",
+           "Hyper Text Markup Language",
         ],
          "rightanswer" : 3
-    },
-    
+        },
        {
         "question" : "What does CSS stand for?" ,
         "answers"  : [
@@ -21,7 +20,6 @@ console.log("Quiz");
         ],
          "rightanswer" : 1
        },
-
        {
         "question" : "Which of these is a programming language?" , 
         "answers"  : [
@@ -51,6 +49,16 @@ console.log("Quiz");
             "function()",
         ],
         "rightanswer" : 2
+       },
+       {
+        "question" : "What are typically found in an array?",
+        "answers"  : [
+            "Booleans",
+            "Strings",
+            "Numbers",
+            "All of the above",
+        ],
+        "right answer" : 3
        }
     ]
     function showQuestion (idx) {
@@ -62,5 +70,5 @@ console.log("Quiz");
             <li> ${ quizQuestions[i].answers[2]}</li>
             <li> ${ quizQuestions[i].answers[3]}</li>
             </ul> 
-        
-    },
+        `
+    }
