@@ -1,4 +1,4 @@
-    var quizQuestions = document.querySelector("#quiz-questions");
+    var quizQuestions = document.querySelector("#quizquestions");
     var remainingTime = document.querySelector("#time");
     var quizAnswers = document.querySelector("#answers");
     var submitBtn = document.querySelector("#submit");
@@ -7,7 +7,7 @@
   
    
     var questionCount = 0;
-    var time = quiz-questions.length * 20;
+    var time = quizquestions.length * 20;
     var timeR; 
 
     //function launchQuiz() {
@@ -19,9 +19,11 @@ function startQuiz(){
     var quizStart= document.getElementById("quiz-start");
     quizStart.setAttribute("class", "hide");
 
-    quizQuestions.removeAttribute("class");
+    console.log("quizStart");
 
-    timeR = setInterval(clockTick, 1000);
+    quizquestions.removeAttribute("class");
+
+    timeR = setInterval(timerGo, 1000);
 
     timeR.textContent = time;
 
@@ -30,12 +32,13 @@ function startQuiz(){
     }
 
 function getQuestion() {
-    var currentQuestion  = quiz-questions[questionCount];
+    
+    var currentQuestion  = quizQuestions[questionCount];
 
     var questionS = document.getElementById("Question");
     questionS.textContent = currentQuestion.question;
 
-    answers.innerHTML = "";
+    quizAnswers.innerHTML = "";
 
     currentQuestion.answers.forEach(function(answer, i) {
         var answerNode = document.createElement("button");
@@ -53,7 +56,7 @@ function getQuestion() {
         
 function questionClick() {
 
-if (this.value !== quiz-questions[questionCount].answer) {
+if (this.value !== quizquestions[questionCount].rightanswer) {
             
 time -= 10;
 
@@ -66,7 +69,7 @@ timeR.textContent = time;
 
 questionCount++;
 
-if(questionCount===quiz-questions.length) {
+if(questionCount===quizquestions.length) {
     quizEnd();
 } else {
    getQuestion();

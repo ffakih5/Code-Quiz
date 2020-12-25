@@ -1,7 +1,7 @@
     var quizQuestions = [
        {
         "question" : "What does HTML stand for?" ,
-        "answers"  : [
+        "answer"  : [
            "HumananiTy MagnosteeL", 
            "Hyper Tastic Magic Lions",
            "Horton Tells Murtle Loo",
@@ -11,7 +11,7 @@
         },
        {
         "question" : "What does CSS stand for?" ,
-        "answers"  : [
+        "answer"  : [
            "", 
            "Cascading Style Sheets",
            "easyto understand",
@@ -21,7 +21,7 @@
        },
        {
         "question" : "Which of these is a programming language?" , 
-        "answers"  : [
+        "answer"  : [
             "JavaScript", 
             "Pythagoras Theorum",
             "Ruby Code",
@@ -31,7 +31,7 @@
        },
        { 
         "question" : "Where do you find the Document title, meta data, styles and links?" , 
-        "answers"  : [
+        "answer"  : [
             "<html>",
             "<a>",
             "<script>",
@@ -41,7 +41,7 @@
        },
        {
         "question" : "What is used to enable a button when clicked?", 
-        "answers"  : [
+        "answer"  : [
             "addElementById",
             "onClick",
             "addEventListener",
@@ -51,7 +51,7 @@
        },
        {
         "question" : "What are typically found in an array?",
-        "answers"  : [
+        "answer"  : [
             "Booleans",
             "Strings",
             "Numbers",
