@@ -1,4 +1,4 @@
-function printhigh-scores(){
+function printhigh-scores() {
     var highScores = JSON.parse(window.localStorage.getItem("high-scores")) || [];
 
     highScores.sort(function(a,b) {
@@ -11,18 +11,14 @@ function printhigh-scores(){
         liItem.textContent = score.initials + " - " + score.score;
 
         var olItem = document.getElementById("high-scores");
-        olItem.appendChild(liItem)
-
-
-
-    
-    }
-    
-    }
-        
-    
-
-
-
-
+        olItem.appendChild(liItem);
+    }); 
 }
+
+function clearHighscores(){
+    window.localStorage.removeItem("high-scores");
+    window.location.reload();
+}
+ document.getElementById("clear").onclick = clearHighscores;
+
+ printhigh-scores();
