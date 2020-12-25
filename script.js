@@ -106,7 +106,7 @@ function keepHighscore() {
             initials: initials
         };
 
-        high-highScores.push(newScore); 
+        highScores.push(newScore); 
         window.localStorage.setItem("Highscores", JSON.stringify(Highscores));
 
         window.location.href = "scores.html";
