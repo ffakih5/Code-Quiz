@@ -99,7 +99,7 @@ function keepHighscore() {
 
     if (initials !=="") {
         var highScores = 
-        JSON.parse(window.localStorage.getItem("high-scores")) || [];
+        JSON.parse(window.localStorage.getItem("Highscores")) || [];
         
         var newScore = {
             score: time,
@@ -107,7 +107,7 @@ function keepHighscore() {
         };
 
         high-highScores.push(newScore); 
-        window.localStorage.setItem("high-scores", JSON.stringify(high-scores));
+        window.localStorage.setItem("Highscores", JSON.stringify(Highscores));
 
         window.location.href = "scores.html";
         }
