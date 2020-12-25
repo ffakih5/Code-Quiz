@@ -7,7 +7,7 @@
   
    
     var questionCount = 0;
-    var time = questions.length * 20;
+    var time = quiz-questions.length * 20;
     var timeR; 
 
     //function launchQuiz() {
@@ -66,7 +66,7 @@ timeR.textContent = time;
 
 questionCount++;
 
-if(questionCount===questions.length) {
+if(questionCount===quiz-questions.length) {
     quizEnd();
 } else {
    getQuestion();

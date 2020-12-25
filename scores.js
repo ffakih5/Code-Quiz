@@ -1,4 +1,4 @@
-function printHighscores() {
+function printHighScores() {
     var highScores = JSON.parse(window.localStorage.getItem("Highscores")) || [];
 
     highScores.sort(function(a,b) {
@@ -15,10 +15,10 @@ function printHighscores() {
     }); 
 }
 
-function clearHighscores(){
+function clearHighScores(){
     window.localStorage.removeItem("Highscores");
     window.location.reload();
 }
- document.getElementById("clear").onclick = clearHighscores;
+ document.getElementById("clear").onclick = clearHighScores;
 
- printHighscores();
+ printHighScores();
