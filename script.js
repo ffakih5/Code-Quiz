@@ -40,7 +40,7 @@ function getQuestion() {
 
     quizAnswers.innerHTML = "";
 
-    currentQuestion.answers.forEach(function(answer, i) {
+    currentQuestion.answer.forEach(function(answer, i) {
         var answerNode = document.createElement("button");
         answerNode.setAttribute("class", "answer");
         answerNode.setAttribute("value", answer);
@@ -49,7 +49,9 @@ function getQuestion() {
 
         answerNode.onclick = questionClick;
 
-        answers.appendChild(answerNode);
+        quizAnswers.appendChild(answerNode);
+        console.log(answerNode);
+        console.log(quizAnswers);
 
     });
 }
