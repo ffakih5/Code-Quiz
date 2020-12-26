@@ -38,14 +38,17 @@ function getQuestion() {
     var currentQuestion  = quizQuestions[questionCount];
 
     var questionS = document.getElementById("Question");
-    questionS.textContent = currentQuestion.question;
+    questionS.setAttribute("data-correct", currentQuestion.question);
+    //questionS.textContent = currentQuestion.question;
+    questionS.setAttribute("data-correct", currentQuestion.rightanswer);
+    console.log(questionS.getAttribute("data-correct"));
 
     quizAnswers.innerHTML = "";
 
     currentQuestion.answer.forEach(function(answer, i) {
         var answerNode = document.createElement("button");
         answerNode.setAttribute("class", "answer");
-        answerNode.setAttribute("value", answer);
+        answerNode.setAttribute("data-value", answer);
 
         answerNode.textContent = i + 1 + ". " + answer;
 
@@ -58,8 +61,9 @@ function getQuestion() {
         
 function questionClick() {
 
-if (this.value !== quizquestions[questionCount].rightanswer) {
-            console.log(rightanswer);
+if (this.getAttribute("data-value") !==
+document.getElementById("Question").getAttribute("data-correct")) {
+
 time -= 10;
 
 if (time<0) {

@@ -1,6 +1,7 @@
 body {
 font-family: 'Markazi Text', serif;
-background-image: "images/Coding.jpg";
+background-image: url("Coding.jpg");
+color:hotpink;
 }
 
 .wrapper {
@@ -28,11 +29,11 @@ background-image: "images/Coding.jpg";
     right: 10px;
 }
 a {
-    color: black;
+    color: hotpink;
     transition: color 0.01s;
 }
 
-a:hover{
+a:hover {
     color: #505059;
 }
 
@@ -42,5 +43,32 @@ button {
     cursor: pointer;
     font-family: 'Markazi Text', serif;
     font-size: 100%;
+    color:hotpink;
+    background-color:#2d2d3b;
    
+}
+button:hover {
+    background-color:#2d2d3b;
+}
+
+.answers {
+    display: block;
+}
+
+input[type="text"] {
+    font-size: 100%;
+}
+
+ol{
+padding-left: 0px;
+max-height: 400px;
+overflow: auto;
+}
+
+li {
+    padding: 5px;
+}
+
+li:nth-child(odd) {
+    background-color:#2d2d3b;
 }
