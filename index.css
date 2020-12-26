@@ -1,6 +1,6 @@
 body {
 font-family: 'Markazi Text', serif;
-background-image: 
+background-image: "images/Coding.jpg";
 }
 
 .wrapper {
@@ -42,5 +42,5 @@ button {
     cursor: pointer;
     font-family: 'Markazi Text', serif;
     font-size: 100%;
-    background-color: ;
+   
 }
