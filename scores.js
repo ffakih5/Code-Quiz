@@ -1,5 +1,5 @@
 function printHighScores() {
-    var highScores = JSON.parse(window.localStorage.getItem("Highscores")) || [];
+    var highScores = JSON.parse(window.localStorage.getItem("highscores")) || [];
 
     highScores.sort(function(a,b) {
         return b.score-a.score;
@@ -10,15 +10,15 @@ function printHighScores() {
         var liItem = document.createElement("li");
         liItem.textContent = score.initials + " - " + score.score;
 
-        var olItem = document.getElementById("Highscores");
+        var olItem = document.getElementById("highscores");
         olItem.appendChild(liItem);
     }); 
 }
 
 function clearHighScores() {
-    window.localStorage.removeItem("Highscores");
+    window.localStorage.removeItem("highscores");
     window.location.reload();
 }
- document.getElementById("clear").onclick = clearHighScores;
+ document.getElementById("clear").onclick = clearhighScores;
 
- printHighScores();
+ printhighScores();

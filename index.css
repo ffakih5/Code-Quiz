@@ -1,3 +1,29 @@
 body {
 font-family: 'Markazi Text', serif
 }
+
+.wrapper {
+    margin: 100px auto 0 auto 0;
+    max-width: 600px;
+}
+
+.hide {
+    display: none;
+}
+
+.start {
+    text-align: center;
+}
+
+.scores {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.timer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
