@@ -7,7 +7,7 @@ var inputInitials = document.querySelector("#initials");
 
 
 var questionCount = 0;
-var time = questionSet.length * 20;
+var time = quizquestions.length * 20;
 var timeR; 
 
 //function launchQuiz() {
@@ -75,7 +75,7 @@ timeR.textContent = time;
 
 questionCount++;
 
-if(questionCount===questionSet.length -1) {
+if(questionCount===quizquestions.length -1) {
 quizEnd();
 } else {
 getQuestion();
