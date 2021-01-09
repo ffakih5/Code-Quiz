@@ -6,7 +6,7 @@ var startBtn = document.querySelector("#begin");
 var inputInitials = document.querySelector("#initials");
 
 
-var questionSet = 0;
+var questionCount = 0;
 var time = quizquestions.length * 20;
 var timeR; 
 
