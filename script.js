@@ -7,7 +7,7 @@ var inputInitials = document.querySelector("#initials");
 
 
 var questionCount = 0;
-var time = quizquestions.length * 20;
+var time = questions.length * 20; //from id
 var timeR; 
 
 //function launchQuiz() {
@@ -35,7 +35,7 @@ getQuestion();
 function getQuestion() {
 
 
-var currentQuestion  = questionSet[0].question;
+var currentQuestion  = questions[0].question;
 
 var questionS = document.getElementById("Question");
 questionS.setAttribute("data-correct", currentQuestion.question);
