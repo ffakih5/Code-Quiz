@@ -75,7 +75,7 @@ timeR.textContent = time;
 
 questionCount++;
 
-if(questionCount===quizquestions.length -1) {
+if(questionCount > quizquestions.length -1) {
 quizEnd();
 } else {
 getQuestion();
@@ -132,7 +132,7 @@ startBtn.onclick = startQuiz;
 
 inputInitials.onkeyup = enterPressed;
 
-
+console.log(questionClick);
 
 
 
