@@ -7,7 +7,7 @@ var inputInitials = document.querySelector("#initials");
 
 
 var questionCount = 0;
-var time = quizquestions.length * 20;
+var time = questionSet.length * 20;
 var timeR; 
 
 //function launchQuiz() {
@@ -22,7 +22,7 @@ quizStart.setAttribute("class", "hide");
 
 console.log("quizStart");
 
-quizquestions.removeAttribute("class");
+quizQuestions.removeAttribute("class");
 
 timeR = setInterval(timerGo, 1000);
 
@@ -35,7 +35,7 @@ getQuestion();
 function getQuestion() {
 
 
-var currentQuestion  = quizQuestions[questionCount];
+var currentQuestion  = questionSet[questionCount];
 
 var questionS = document.getElementById("Question");
 questionS.setAttribute("data-correct", currentQuestion.question);
@@ -75,7 +75,7 @@ timeR.textContent = time;
 
 questionCount++;
 
-if(questionCount===quizquestions.length) {
+if(questionCount===questionSet.length -1) {
 quizEnd();
 } else {
 getQuestion();
