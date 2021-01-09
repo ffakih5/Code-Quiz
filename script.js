@@ -35,7 +35,7 @@ getQuestion();
 function getQuestion() {
 
 
-var currentQuestion  = questionSet[questionCount];
+var currentQuestion  = questionSet[0].question;
 
 var questionS = document.getElementById("Question");
 questionS.setAttribute("data-correct", currentQuestion.question);
