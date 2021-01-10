@@ -16,8 +16,6 @@ function startQuiz(){
 var quizStart= document.getElementById("quiz-start");
 quizStart.setAttribute("class", "hide");
 
-console.log("quizStart");
-
 quizQuestions.removeAttribute("class");
 
 timeR = setInterval(timerGo, 1000);
@@ -33,16 +31,18 @@ function getQuestion() {
 
 var currentQuestion = questions[0].question;
 var currentAnswer = questions[0].answer;
+for(i=0; i < questions.length; i++){
+
+}
 
 var questionS = document.getElementById("Question");
 questionS.setAttribute("data-correct", currentQuestion.question);
-//questionS.textContent = currentQuestion.question;
-questionS.setAttribute("data-correct", currentQuestion.rightanswer);
+questionS.setAttribute("data-correct", currentAnswer.rightanswer);
 
 
     quizAnswers.innerHTML = "";
 
-    currentAnswer.forEach(function(answer, i) {
+    currentAnswer.forEach(function(answer,i) {
     var answerNode = document.createElement("button");
     answerNode.setAttribute("class", "answer");
     answerNode.setAttribute("data-value", answer);
@@ -129,4 +129,3 @@ startBtn.onclick = startQuiz;
 
 inputInitials.onkeyup = enterPressed;
 
-console.log(questionClick);
