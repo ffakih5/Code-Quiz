@@ -38,11 +38,11 @@ var questionS = document.getElementById("Question");
 questionS.setAttribute("data-correct", currentQuestion.question);
 //questionS.textContent = currentQuestion.question;
 questionS.setAttribute("data-correct", currentQuestion.rightanswer);
-console.log(questionS.getAttribute("data-correct"));
 
-quizAnswers.innerHTML = "";
 
-currentAnswer.answer.forEach(function(answer, i) {
+    quizAnswers.innerHTML = "";
+
+    currentAnswer.forEach(function(answer, i) {
     var answerNode = document.createElement("button");
     answerNode.setAttribute("class", "answer");
     answerNode.setAttribute("data-value", answer);
