@@ -31,7 +31,8 @@ getQuestion();
 function getQuestion() {
 
 
-var currentQuestion  = questions[0].question;
+var currentQuestion = questions[0].question;
+var currentAnswer = questions[0].answer;
 
 var questionS = document.getElementById("Question");
 questionS.setAttribute("data-correct", currentQuestion.question);
@@ -41,7 +42,7 @@ console.log(questionS.getAttribute("data-correct"));
 
 quizAnswers.innerHTML = "";
 
-currentQuestion.answer.forEach(function(answer, i) {
+currentAnswer.answer.forEach(function(answer, i) {
     var answerNode = document.createElement("button");
     answerNode.setAttribute("class", "answer");
     answerNode.setAttribute("data-value", answer);
