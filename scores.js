@@ -11,7 +11,10 @@ function printHighScores() {
         liItem.textContent = score.initials + " - " + score.score;
 
         var olItem = document.getElementById("highscores");
-        olItem.appendChild(liItem);
+        if (olItem) {
+            olItem.appendChild(liItem);
+        }
+       
     }); 
 }
 
@@ -19,6 +22,11 @@ function clearHighScores() {
     window.localStorage.removeItem("highscores");
     window.location.reload();
 }
- document.getElementById("clear").onclick = clearHighScores;
+ let clearBtn = document.getElementById("clear") 
+ if(clearBtn){
+    clearBtn.onclick = clearHighScores;
+ }
+ 
+
 
  printHighScores();
