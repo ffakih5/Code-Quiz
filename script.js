@@ -59,7 +59,6 @@ function questionClick() {
     let rightAnswer = document.getElementById("Question").getAttribute("data-correct");
     if(index === rightAnswer){
         questionCount++;
-       console.log(questionCount, questions.length)
         if(questionCount > questions.length -1) {
             quizEnd();
         } else {
