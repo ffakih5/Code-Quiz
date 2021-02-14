@@ -57,6 +57,7 @@ button:hover {
 
 input[type="text"] {
     font-size: 100%;
+    background-color: hotpink;
 }
 
 ol{
