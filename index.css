@@ -31,6 +31,7 @@ color:hotpink;
 a {
     color: hotpink;
     transition: color 0.01s;
+
 }
 
 a:hover {
@@ -42,7 +43,6 @@ button {
     margin: 5px;
     cursor: pointer;
     font-family: 'Markazi Text', serif;
-    font-size: 100%;
     color:hotpink;
     background-color:#2d2d3b;
    
