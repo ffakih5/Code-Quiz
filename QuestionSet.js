@@ -1,4 +1,4 @@
-    var questions = [
+var questions = [
     {
      question: "What does HTML stand for?" ,
      answer: ["HumananiTy MagnosteeL", "Hyper Tastic Magic Lions", "Horton Tells Murtle Loo", "Hyper Text Markup Language",],
