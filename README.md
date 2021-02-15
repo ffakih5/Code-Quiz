@@ -1,5 +1,5 @@
 # Code-Quiz
-<a href = "https://img.shields.io/badge/JS-CodeQuiz-ff69b4"><img alt= "JavaScript code quiz badge">
+<a href = "#"><img src=" https://img.shields.io/badge/JS-CodeQuiz-ff69b4" alt= "JavaScript code quiz badge">
 
 ![Code Quiz](images/code-quiz.png)
 
