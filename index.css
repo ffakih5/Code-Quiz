@@ -1,7 +1,9 @@
 body {
 font-family: 'Markazi Text', serif;
+font-size: 150%;
 background-image: url("Coding.jpg");
 color:hotpink;
+
 }
 
 .wrapper {
@@ -45,6 +47,7 @@ button {
     font-family: 'Markazi Text', serif;
     color:hotpink;
     background-color:#2d2d3b;
+    font-size: 100%;
    
 }
 button:hover {
